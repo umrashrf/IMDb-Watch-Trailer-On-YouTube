@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "IMDB Watch Trailer on YouTube",
-	"version": "1.2",
+	"version": "1.3",
 	"description": "If you quickly want to watch movie trailers on YouTube while surfing movies on IMDB, this is a very handy extension for you.",
 	"icons": {
 		"16": "icon16.png",
