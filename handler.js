@@ -39,16 +39,16 @@ function adify(link) {
 }
 
 function addAd() {
-	$("body").css("overflow", "hidden");
-
-	$("embed#movie_player").css("z-index", "9999");
-	$("body").append('<div id="imdbOverlay" style="background-color: rgba(255,255,255,0.9); width: 100%; height: 100%; z-index: 999; position: absolute; top: 0; left: 0;"></div>');
-
 	var playerPos = $("embed#movie_player").offset();
 	var w = playerPos.left - 20;
 	var h = $("embed#movie_player").height();
 
 	if (w > 50) {
+		$("body").css("overflow", "hidden");
+
+		$("embed#movie_player").css("z-index", "9999");
+		$("body").append('<div id="imdbOverlay" style="background-color: rgba(255,255,255,0.9); width: 100%; height: 100%; z-index: 999; position: absolute; top: 0; left: 0;"></div>');
+
 		var ad = '';
 		ad += '<img src="http://bassdropclothing.com/wp-content/uploads/2012/06/adhere.png" />';
 		ad += '<h1>~800+ Users</h1>';
